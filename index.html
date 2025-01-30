@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-primaryBg: #fff9f4;
+        --color-main: #ffdc26;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar starts -->
+      <div class="bg-primaryBg p-3 sora">
+        <div class="md:container mx-auto navbar">
+          <div class="navbar-start">
+            <img
+              class="mr-2 md:mr-4"
+              src="./c1-assets/logo-header.png"
+              alt=""
+            />
+            <a class="hidden md:block text-lg md:text-2xl"
+              >Browse <span class="text-main">4</span>Pets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal text-xl px-1">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="indicator hidden md:block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                />
+              </svg>
+            </div>
+            <div class="hidden md:block">
+              <button class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button
+                class="border-2 border-[#ffdc26] text-black bg-transparent px-5 py-2 rounded-lg hidden md:block md:mr-2 text-xl"
+              >
+                login
+              </button>
+            </div>
+            <a class="btn bg-[#ffdc26] text-xl">Register</a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-t border-gray-400 md:hidden" />
+      <!-- navbar ends -->
+      <!-- banner starts -->
+
+      <div
+        class="relative md:container mx-auto h-96 sm:h-80 md:h-96 lg:h-128 my-10"
+        style="
+          background-image: url('./c1-assets/cat-big.png');
+          background-size: contain;
+          background-position: bottom;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="relative z-10 max-w-lg">
+          <h1 class="text-3xl sm:text-4xl font-bold mb-4 adlam-display">
+            Pamper Your Pet, Because They Deserve the Best
+          </h1>
+          <p class="text-base sm:text-lg mb-6 sora">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="bg-[#ffdc26] text-black py-2 px-6 rounded text-sm sm:text-base sora"
+          >
+            Find a Pet
+          </button>
+        </div>
+      </div>
+
+      <!-- banner ends -->
+    </header>
+
+    <!-- footer starts -->
+    <!-- footer ends -->
+  </body>
+</html>
