@@ -22,6 +22,16 @@
         --color-primaryBg: #fff9f4;
         --color-main: #ffdc26;
         --color-bgCard: #f9df8a;
+        --animate-wiggle: wiggle 1s ease-in-out infinite;
+        @keyframes wiggle {
+          0%,
+          100% {
+            transform: rotate(-3deg);
+          }
+          50% {
+            transform: rotate(3deg);
+          }
+        }
       }
     </style>
     <link rel="stylesheet" href="style.css" />
@@ -107,7 +117,7 @@
           background-repeat: no-repeat;
         "
       >
-        <div class="relative z-10 max-w-lg">
+        <div class="relative z-10 max-w-lg animate-wiggle">
           <h1 class="text-3xl sm:text-4xl font-bold mb-4 adlam-display">
             Pamper Your Pet, Because They Deserve the Best
           </h1>
